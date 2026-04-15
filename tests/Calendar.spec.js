@@ -14,6 +14,7 @@ test('Calendar Object Test', async ({page}) => {
     await page.getByText(year).click();
     await page.locator(".react-calendar__year-view__months__month").nth(Number(month)-1).click();
     await page.locator("//abbr[text()='"+date+"']").click();
+    //Making some changes to start get actions
  
     const inputs =  page.locator('.react-date-picker__inputGroup__input')
  
